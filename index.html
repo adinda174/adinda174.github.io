@@ -3,177 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Profil Adinda</title>
+    <title>My Profile</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: linear-gradient(135deg, #020b1c, #0b2d52);
-            color: #222;
+            font-family: Arial, sans-serif;
+            background: #071a33;
+            color: white;
         }
 
         /* HEADER */
         header {
-            background-color: #061a36;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
         }
 
-        /* FOTO PROFIL */
+        .profil {
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        /* FOTO */
         .foto-profil {
-            width: 180px;
-            height: 180px;
+            width: 280px;
+            height: 280px;
             object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #ffffff;
-            display: block;
-            margin: 0 auto 20px;
+            border-radius: 25px;
+            border: 3px solid #ffffff;
         }
 
-        header h1 {
-            margin-bottom: 10px;
+        /* TEKS */
+        .teks h1 {
+            font-size: 50px;
+            margin: 0;
         }
 
-        /* NAVIGASI */
-        nav {
-            background-color: #0a2545;
-            text-align: center;
-            padding: 18px;
+        .teks h1 span {
+            color: #5da9e9;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 18px;
-            font-weight: bold;
+        .teks h3 {
+            color: #9fc9ed;
+            font-weight: normal;
         }
 
-        nav a:hover {
-            color: #7fc8ff;
-        }
-
-        /* ISI */
-        section {
-            background-color: white;
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-        }
-
-        h2 {
-            color: #092b50;
-            border-bottom: 3px solid #092b50;
-            padding-bottom: 10px;
-        }
-
-        p {
+        .teks p {
+            color: #d6e5f3;
             line-height: 1.7;
         }
 
-        li {
-            margin: 12px 0;
+        /* TOMBOL */
+        .tombol {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #1769aa;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
         }
 
-        /* FOOTER */
-        footer {
-            background-color: #061a36;
-            color: white;
+        .tombol:hover {
+            background: #328bd0;
+        }
+
+        /* BAGIAN INFORMASI */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 25px;
+        }
+
+        .judul {
             text-align: center;
-            padding: 18px;
-            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .judul h2 {
+            font-size: 32px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: #0d294b;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid #1d4770;
+        }
+
+        .card h3 {
+            color: #66b3ed;
+        }
+
+        .card p,
+        .card li {
+            color: #d6e5f3;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #9bbbd6;
+        }
+
+        /* HP */
+        @media (max-width: 700px) {
+            .profil {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .teks h1 {
+                font-size: 38px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- PROFIL UTAMA -->
     <header>
 
-        <img src="https://www.instagram.com/p/DdgFhfuj-Bp/?stkn=MTJzYTJlc2JnNzgwNw=="
-             alt="Foto Profil Adinda"
-             class="foto-profil">
+        <div class="profil">
 
-        <h1>WEBSITE ADINDAAA!</h1>
+            <img src="foto-profil.jpg"
+                 alt="Foto Profil"
+                 class="foto-profil">
 
-        <p>SELAMAT DATANG DI WEBSITE INI</p>
+            <div class="teks">
+
+                <h1>Halo, ini website <span>Adinda</span></h1>
+
+                <h3>Student • DKV • Creative</h3>
+
+                <p>
+                    Saya Adinda Keysha Azzahra, siswa SMK
+                    yang memiliki ketertarikan pada dunia desain,
+                    kreativitas, dan seni.
+                </p>
+
+                <a href="#informasi" class="tombol">
+                    Kenali Saya
+                </a>
+
+            </div>
+
+        </div>
 
     </header>
 
 
-    <!-- MENU -->
-    <nav>
-        <a href="#tentang">Tentang Saya</a>
-        <a href="#sekolah">Sekolah</a>
-        <a href="#lagu">Lagu Kesukaan</a>
-    </nav>
+    <!-- INFORMASI -->
+    <div class="container" id="informasi">
+
+        <div class="judul">
+            <h2>Tentang Saya</h2>
+            <p>Beberapa informasi tentang saya</p>
+        </div>
 
 
-    <!-- TENTANG SAYA -->
-    <section id="tentang">
+        <div class="cards">
 
-        <h2>Tentang Saya</h2>
+            <!-- SEKOLAH -->
+            <div class="card">
 
-        <p>
-            Halo! Nama saya <b>Adinda Keysha Azzahra</b>.
-            Saya berusia 17 tahun dan merupakan siswa SMK PGRI 1 TANGERANG
-        </p>
+                <h3>🎓 Sekolah</h3>
 
-        <p>
-            Saya memiliki minat di bidang desain dan kreativitas.
-            Saya juga senang mempelajari hal-hal baru yang
-            berhubungan dengan desain dan seni.
-        </p>
+                <p>
+                    Saya bersekolah di
+                    <b>SMK PGRI 1 Tangerang</b>.
+                </p>
 
-    </section>
+                <p>
+                    Jurusan:
+                    <b>Desain Komunikasi Visual (DKV)</b>
+                </p>
 
-
-    <!-- SEKOLAH -->
-    <section id="sekolah">
-
-        <h2>Sekolah Asal</h2>
-
-        <p>
-            Saya bersekolah di
-            <b>SMK PGRI 1 Tangerang</b>.
-        </p>
-
-        <p>
-            Saya mengambil jurusan
-            <b>Desain Komunikasi Visual (DKV)</b>.
-        </p>
-
-    </section>
+            </div>
 
 
-    <!-- LAGU KESUKAAN -->
-    <section id="lagu">
+            <!-- LAGU -->
+            <div class="card">
 
-        <h2>Lagu Kesukaan</h2>
+                <h3>🎵 Lagu Kesukaan</h3>
 
-        <p>
-            Beberapa lagu yang saya sukai:
-        </p>
+                <ul>
+                    <li>Lagu Kesukaan 1</li>
+                    <li>Lagu Kesukaan 2</li>
+                    <li>Lagu Kesukaan 3</li>
+                </ul>
 
-        <ul>
-            <li>Lagu Kesukaan </li>
-            <li>Lagu Kesukaan </li>
-            <li>Lagu Kesukaan </li>
-        </ul>
+            </div>
 
-    </section>
+        </div>
+
+    </div>
 
 
-    <!-- FOOTER -->
     <footer>
-
-        <p>© 2026 Adinda Keysha Azzahra</p>
-
+        © 2026 Adinda Keysha Azzahra
     </footer>
 
 </body>
