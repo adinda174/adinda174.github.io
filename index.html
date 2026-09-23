@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>My Profile - Adinda</title>
 
     <style>
         * {
@@ -17,7 +17,7 @@
             color: white;
         }
 
-        /* HEADER */
+        /* PROFIL UTAMA */
         header {
             min-height: 100vh;
             display: flex;
@@ -34,16 +34,14 @@
             gap: 60px;
         }
 
-        /* FOTO */
         .foto-profil {
             width: 280px;
             height: 280px;
             object-fit: cover;
             border-radius: 25px;
-            border: 3px solid #ffffff;
+            border: 3px solid white;
         }
 
-        /* TEKS */
         .teks h1 {
             font-size: 50px;
             margin: 0;
@@ -63,7 +61,6 @@
             line-height: 1.7;
         }
 
-        /* TOMBOL */
         .tombol {
             display: inline-block;
             margin-top: 15px;
@@ -78,22 +75,27 @@
             background: #328bd0;
         }
 
-        /* BAGIAN INFORMASI */
+        /* CONTAINER */
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 50px 25px;
+            padding: 70px 25px;
         }
 
         .judul {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .judul h2 {
             font-size: 32px;
         }
 
+        .judul p {
+            color: #a9c7df;
+        }
+
+        /* CARD */
         .cards {
             display: flex;
             gap: 20px;
@@ -117,14 +119,40 @@
             line-height: 1.7;
         }
 
+        /* PELAJARAN DKV */
+        .pelajaran {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .mapel {
+            background: #0d294b;
+            padding: 25px;
+            border-radius: 18px;
+            border: 1px solid #1d4770;
+        }
+
+        .mapel h3 {
+            color: #66b3ed;
+        }
+
+        .mapel p {
+            color: #d6e5f3;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
         footer {
             text-align: center;
             padding: 25px;
             color: #9bbbd6;
+            border-top: 1px solid #173a5e;
         }
 
-        /* HP */
+        /* RESPONSIVE */
         @media (max-width: 700px) {
+
             .profil {
                 flex-direction: column;
                 text-align: center;
@@ -137,34 +165,38 @@
             .cards {
                 flex-direction: column;
             }
+
+            .pelajaran {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- PROFIL UTAMA -->
+    <!-- PROFIL -->
     <header>
 
         <div class="profil">
 
-            <img src="foto-profil.jpg"
-                 alt="Foto Profil"
+            <img src="https://imagepaste.org/v/2mca7q8v.jpg"
+                 alt="Foto Profil Adinda"
                  class="foto-profil">
 
             <div class="teks">
 
-                <h1>Halo, ini website <span>Adinda</span></h1>
+                <h1>website<span>Adindaaa!!!</span></h1>
 
                 <h3>Student • DKV • Creative</h3>
 
                 <p>
-                    Saya Adinda Keysha Azzahra, siswa SMK
-                    yang memiliki ketertarikan pada dunia desain,
+                    Saya Adinda Keysha Azzahra, siswa SMK yang
+                    memiliki ketertarikan pada dunia desain,
                     kreativitas, dan seni.
                 </p>
 
-                <a href="#informasi" class="tombol">
+                <a href="#tentang" class="tombol">
                     Kenali Saya
                 </a>
 
@@ -175,18 +207,16 @@
     </header>
 
 
-    <!-- INFORMASI -->
-    <div class="container" id="informasi">
+    <!-- TENTANG SAYA -->
+    <div class="container" id="tentang">
 
         <div class="judul">
             <h2>Tentang Saya</h2>
             <p>Beberapa informasi tentang saya</p>
         </div>
 
-
         <div class="cards">
 
-            <!-- SEKOLAH -->
             <div class="card">
 
                 <h3>🎓 Sekolah</h3>
@@ -197,14 +227,13 @@
                 </p>
 
                 <p>
-                    Jurusan:
-                    <b>Desain Komunikasi Visual (DKV)</b>
+                    Saya mengambil jurusan
+                    <b>Desain Komunikasi Visual (DKV)</b>.
                 </p>
 
             </div>
 
 
-            <!-- LAGU -->
             <div class="card">
 
                 <h3>🎵 Lagu Kesukaan</h3>
@@ -222,9 +251,113 @@
     </div>
 
 
+    <!-- PELAJARAN DKV -->
+    <div class="container">
+
+        <div class="judul">
+
+            <h2>Pelajaran di DKV</h2>
+
+            <p>
+                Beberapa bidang yang saya pelajari
+                selama menempuh jurusan DKV.
+            </p>
+
+        </div>
+
+
+        <div class="pelajaran">
+
+            <div class="mapel">
+
+                <h3>🎨 Desain Grafis</h3>
+
+                <p>
+                    Mempelajari cara membuat desain visual
+                    menggunakan prinsip desain, warna,
+                    layout, dan tipografi.
+                </p>
+
+            </div>
+
+
+            <div class="mapel">
+
+                <h3>📷 Fotografi</h3>
+
+                <p>
+                    Mempelajari teknik mengambil foto,
+                    komposisi, pencahayaan, angle,
+                    dan pengaturan kamera.
+                </p>
+
+            </div>
+
+
+            <div class="mapel">
+
+                <h3>🎬 Videografi</h3>
+
+                <p>
+                    Mempelajari proses pembuatan video,
+                    mulai dari pengambilan gambar,
+                    storytelling, hingga editing.
+                </p>
+
+            </div>
+
+
+            <div class="mapel">
+
+                <h3>✨ Animasi</h3>
+
+                <p>
+                    Mempelajari cara membuat objek dan
+                    karakter bergerak menggunakan teknik
+                    animasi.
+                </p>
+
+            </div>
+
+
+            <div class="mapel">
+
+                <h3>🔤 Tipografi</h3>
+
+                <p>
+                    Mempelajari penggunaan dan pengaturan
+                    huruf agar tulisan terlihat menarik,
+                    jelas, dan sesuai dengan desain.
+                </p>
+
+            </div>
+
+
+            <div class="mapel">
+
+                <h3>✏️ Ilustrasi</h3>
+
+                <p>
+                    Mempelajari pembuatan gambar dan
+                    ilustrasi sebagai media komunikasi
+                    visual.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
     <footer>
+
         © 2026 Adinda Keysha Azzahra
+
     </footer>
 
 </body>
 </html>
+
+      
