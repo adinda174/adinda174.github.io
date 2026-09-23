@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Profil Saya</title>
+
+    <title>Profil Adinda</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background: linear-gradient(135deg, #dff3ff, #4da6d8);
+            color: #222;
         }
 
         header {
-            background-color: #222;
+            background-color: #0876b9;
             color: white;
             text-align: center;
-            padding: 30px;
+            padding: 35px 20px;
+        }
+
+        /* FOTO PROFIL */
+        .foto-profil {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            display: block;
+            margin: 0 auto 15px;
         }
 
         nav {
-            background-color: #444;
+            background-color: #055b8c;
             text-align: center;
             padding: 15px;
         }
@@ -30,72 +42,124 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bdeaff;
         }
 
         section {
             background-color: white;
+            max-width: 800px;
             margin: 25px auto;
             padding: 25px;
-            max-width: 800px;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
         }
 
         h2 {
-            color: #444;
+            color: #0876b9;
+            border-bottom: 2px solid #0876b9;
+            padding-bottom: 8px;
+        }
+
+        li {
+            margin: 10px 0;
         }
 
         footer {
-            text-align: center;
-            background-color: #222;
+            background-color: #055b8c;
             color: white;
+            text-align: center;
             padding: 15px;
+            margin-top: 30px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Website Profil Saya</h1>
-        <p>Selamat datang di website saya!</p>
+
+        <!-- GANTI FOTO SESUAI NAMA FILE -->
+        <img src="foto-profil.jpg"
+             alt="Foto Profil Adinda"
+             class="foto-profil">
+
+        <h1>Halo, Saya Adinda!</h1>
+        <p>Selamat datang di website profil saya</p>
+
     </header>
 
+
+    <!-- MENU -->
     <nav>
         <a href="#tentang">Tentang Saya</a>
         <a href="#sekolah">Sekolah</a>
         <a href="#lagu">Lagu Kesukaan</a>
     </nav>
 
+
+    <!-- TENTANG SAYA -->
     <section id="tentang">
+
         <h2>Tentang Saya</h2>
+
         <p>
-            Halo! Nama saya Adinda Keysha Azzahra.
-            Saya berusia 17 tahun dan saya adalah siswa SMK PGRI 1 TANGERANG
+            Halo! Nama saya <b>Adinda Keysha Azzahra</b>.
+            Saya berusia 17 tahun dan merupakan siswa SMK.
             Saya memiliki minat di bidang desain dan kreativitas.
         </p>
-    </section>
 
-    <section id="sekolah">
-        <h2>Sekolah Asal</h2>
         <p>
-            Saya bersekolah di SMK PGRI 1 Tangerang.
-            Saya mengambil jurusan Desain Komunikasi Visual (DKV).
+            Saya juga senang mempelajari hal-hal baru,
+            terutama yang berhubungan dengan desain dan seni.
         </p>
+
     </section>
 
+
+    <!-- SEKOLAH -->
+    <section id="sekolah">
+
+        <h2>Sekolah Asal</h2>
+
+        <p>
+            Saya bersekolah di
+            <b>SMK PGRI 1 Tangerang</b>.
+        </p>
+
+        <p>
+            Saya mengambil jurusan
+            <b>Desain Komunikasi Visual (DKV)</b>.
+        </p>
+
+    </section>
+
+
+    <!-- LAGU KESUKAAN -->
     <section id="lagu">
+
         <h2>Lagu Kesukaan</h2>
-        <p>Beberapa lagu yang saya sukai:</p>
+
+        <p>
+            Berikut beberapa lagu yang saya sukai:
+        </p>
 
         <ul>
             <li>Lagu Kesukaan 1</li>
             <li>Lagu Kesukaan 2</li>
             <li>Lagu Kesukaan 3</li>
         </ul>
+
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Website Profil Saya</p>
+        <p>© 2026 Adinda Keysha Azzahra</p>
     </footer>
 
 </body>
