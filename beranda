@@ -1,0 +1,147 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Beranda</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body bgcolor="#0B1F3A">
+
+    <p>&nbsp;</p>
+
+    <table border="1" width="800px" cellpadding="12px"
+    align="center" bgcolor="white">
+
+        <!-- HEADER -->
+        <tr>
+            <td colspan="2" align="center" bgcolor="#0B1F3A">
+                <font color="white">
+                    <p>&nbsp;</p>
+                    <h1>Website COVID-19</h1>
+                    <p><em>Bersama Melawan COVID-19</em></p>
+                    <p>&nbsp;</p>
+                </font>
+            </td>
+        </tr>
+
+        <!-- MENU NAVIGASI -->
+        <tr>
+            <td colspan="2" bgcolor="#B9D6F2">
+                <a href="index.html">Beranda</a> |
+                <a href="tentang-saya.html">Tentang Saya</a> |
+                <a href="sekolahku.html">Sekolahku</a> |
+                <a href="lagu-kesukaan.html">Lagu Kesukaan</a>
+            </td>
+        </tr>
+
+        <!-- KONTEN UTAMA -->
+        <tr>
+            <td width="75%" valign="top">
+
+                <h3>Apa Itu COVID-19?</h3>
+
+                <p align="right">
+                    <small><em>Informasi Kesehatan</em></small>
+                </p>
+
+                <p>
+                    COVID-19 adalah penyakit menular yang disebabkan
+                    oleh virus SARS-CoV-2. Penyakit ini dapat menyerang
+                    sistem pernapasan dan menimbulkan gejala yang
+                    berbeda pada setiap orang.
+                </p>
+
+                <p>
+                    Penularan dapat terjadi melalui partikel pernapasan
+                    yang dikeluarkan ketika seseorang bernapas,
+                    berbicara, batuk, atau bersin.
+                </p>
+
+                <p>
+                    <a href="https://www.who.int/health-topics/coronavirus">
+                        Selengkapnya tentang COVID-19
+                    </a>
+                </p>
+
+                <hr>
+
+                <h3>Cara Mencegah COVID-19</h3>
+
+                <p>
+                    Berikut beberapa cara untuk mengurangi risiko
+                    penularan COVID-19:
+                </p>
+
+                <ul>
+                    <li>Mencuci tangan menggunakan sabun.</li>
+                    <li>Menjaga kebersihan lingkungan.</li>
+                    <li>Memastikan sirkulasi udara yang baik.</li>
+                    <li>Menggunakan masker ketika diperlukan.</li>
+                    <li>Mengikuti anjuran tenaga kesehatan.</li>
+                </ul>
+
+                <hr>
+
+                <h3>Pentingnya Menjaga Kesehatan</h3>
+
+                <p>
+                    Menjaga kesehatan merupakan hal yang penting
+                    dalam kehidupan sehari-hari. Biasakan hidup
+                    bersih, makan makanan bergizi, beristirahat
+                    cukup, dan melakukan aktivitas fisik.
+                </p>
+
+            </td>
+
+            <!-- SIDEBAR -->
+            <td width="25%" valign="top" bgcolor="#DCEAF7">
+
+                <font color="#0B1F3A">
+                    <h3>Menu Website</h3>
+                </font>
+
+                <ol>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang-saya.html">Tentang Saya</a></li>
+                    <li><a href="sekolahku.html">Sekolahku</a></li>
+                    <li><a href="lagu-kesukaan.html">Lagu Kesukaan</a></li>
+                </ol>
+
+                <hr>
+
+                <h3>Informasi Kesehatan</h3>
+
+                <p>
+                    <a href="https://www.who.int/">
+                        Website WHO
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://www.kemkes.go.id/">
+                        Kementerian Kesehatan RI
+                    </a>
+                </p>
+
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td colspan="2" align="right" bgcolor="#061426">
+                <font color="white">
+                    <small>
+                        &copy; 2026 Website COVID-19.
+                    </small>
+                </font>
+            </td>
+        </tr>
+
+    </table>
+
+    <p>&nbsp;</p>
+
+</body>
+</html>
+```
